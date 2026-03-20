@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绅士美发店 - 定制你的专属造型</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon">&#9986;</span>
+                <span class="logo-text">绅士美发店</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#gallery" class="nav-link">造型展示</a></li>
+                <li><a href="#stylists" class="nav-link">发型师团队</a></li>
+                <li><a href="#booking" class="nav-link nav-cta">在线预约</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 首屏 Hero -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">SINCE 2015 · 专业男士理发</p>
+            <h1 class="hero-title">绅士美发店</h1>
+            <p class="hero-desc">定制你的专属造型，展现独一无二的绅士魅力</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">立即预约</a>
+                <a href="#gallery" class="btn btn-outline">查看作品</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>向下滚动</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- 造型展示 -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">OUR WORKS</p>
+                <h2 class="section-title">造型展示</h2>
+                <p class="section-desc">每一款造型都是艺术与个性的完美结合</p>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="cut">男士剪发</button>
+                <button class="filter-btn" data-filter="color">染烫造型</button>
+                <button class="filter-btn" data-filter="shave">刮胡修面</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-card" data-category="cut">
+                    <div class="card-image" style="background: linear-gradient(135deg, #8B6F47 0%, #6B5335 100%);">
+                        <div class="card-overlay">
+                            <h3>经典商务短寸</h3>
+                            <p>发型师：陈志远</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="color">
+                    <div class="card-image" style="background: linear-gradient(135deg, #A0522D 0%, #D2691E 100%);">
+                        <div class="card-overlay">
+                            <h3>质感渐变染</h3>
+                            <p>发型师：林浩宇</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="shave">
+                    <div class="card-image" style="background: linear-gradient(135deg, #5C4033 0%, #8B7355 100%);">
+                        <div class="card-overlay">
+                            <h3>经典热毛巾修面</h3>
+                            <p>发型师：王德明</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="cut">
+                    <div class="card-image" style="background: linear-gradient(135deg, #7B6345 0%, #A0855C 100%);">
+                        <div class="card-overlay">
+                            <h3>韩式纹理烫</h3>
+                            <p>发型师：张凯文</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="color">
+                    <div class="card-image" style="background: linear-gradient(135deg, #6F4E37 0%, #C4A882 100%);">
+                        <div class="card-overlay">
+                            <h3>亚麻棕挑染</h3>
+                            <p>发型师：林浩宇</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="cut">
+                    <div class="card-image" style="background: linear-gradient(135deg, #4A3728 0%, #7A6550 100%);">
+                        <div class="card-overlay">
+                            <h3>复古侧背油头</h3>
+                            <p>发型师：陈志远</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="shave">
+                    <div class="card-image" style="background: linear-gradient(135deg, #3E2723 0%, #6D4C41 100%);">
+                        <div class="card-overlay">
+                            <h3>精修胡须造型</h3>
+                            <p>发型师：赵一鸣</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="cut">
+                    <div class="card-image" style="background: linear-gradient(135deg, #8D6E63 0%, #BCAAA4 100%);">
+                        <div class="card-overlay">
+                            <h3>潮流渐变 Fade</h3>
+                            <p>发型师：张凯文</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="color">
+                    <div class="card-image" style="background: linear-gradient(135deg, #5D4037 0%, #A1887F 100%);">
+                        <div class="card-overlay">
+                            <h3>冷灰银感染</h3>
+                            <p>发型师：赵一鸣</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 发型师团队 -->
+    <section class="section stylists" id="stylists">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">OUR TEAM</p>
+                <h2 class="section-title">发型师团队</h2>
+                <p class="section-desc">经验丰富的专业团队，为每一位客人量身打造满意造型</p>
+            </div>
+            <div class="stylists-grid">
+                <div class="stylist-card">
+                    <div class="stylist-avatar" style="background: linear-gradient(135deg, #5D4037, #8D6E63);">
+                        <span class="avatar-initial">陈</span>
+                    </div>
+                    <h3 class="stylist-name">陈志远</h3>
+                    <p class="stylist-role">首席发型师 · 店长</p>
+                    <p class="stylist-exp">从业 15 年</p>
+                    <div class="stylist-tags">
+                        <span>商务造型</span>
+                        <span>复古油头</span>
+                    </div>
+                    <p class="stylist-bio">曾赴日本、英国进修，擅长男士经典造型与现代潮流的完美融合，为每位绅士打造专属形象。</p>
+                </div>
+                <div class="stylist-card">
+                    <div class="stylist-avatar" style="background: linear-gradient(135deg, #6D4C41, #A1887F);">
+                        <span class="avatar-initial">林</span>
+                    </div>
+                    <h3 class="stylist-name">林浩宇</h3>
+                    <p class="stylist-role">高级染烫师</p>
+                    <p class="stylist-exp">从业 10 年</p>
+                    <div class="stylist-tags">
+                        <span>时尚染发</span>
+                        <span>创意烫发</span>
+                    </div>
+                    <p class="stylist-bio">色彩感极佳，精通各类染烫技术，多次获得区域美发大赛奖项，善于根据肤色与脸型推荐最佳发色。</p>
+                </div>
+                <div class="stylist-card">
+                    <div class="stylist-avatar" style="background: linear-gradient(135deg, #4E342E, #795548);">
+                        <span class="avatar-initial">张</span>
+                    </div>
+                    <h3 class="stylist-name">张凯文</h3>
+                    <p class="stylist-role">资深发型师</p>
+                    <p class="stylist-exp">从业 8 年</p>
+                    <div class="stylist-tags">
+                        <span>韩式造型</span>
+                        <span>潮流渐变</span>
+                    </div>
+                    <p class="stylist-bio">擅长韩系潮流造型和美式渐变，注重发型与脸型比例的和谐，深受年轻客户喜爱。</p>
+                </div>
+                <div class="stylist-card">
+                    <div class="stylist-avatar" style="background: linear-gradient(135deg, #3E2723, #6D4C41);">
+                        <span class="avatar-initial">王</span>
+                    </div>
+                    <h3 class="stylist-name">王德明</h3>
+                    <p class="stylist-role">传统理发师</p>
+                    <p class="stylist-exp">从业 20 年</p>
+                    <div class="stylist-tags">
+                        <span>经典修面</span>
+                        <span>传统推剪</span>
+                    </div>
+                    <p class="stylist-bio">坚持传统手艺，精通热毛巾修面与经典推剪，每一刀都精准利落，是老客户的专属理发师。</p>
+                </div>
+                <div class="stylist-card">
+                    <div class="stylist-avatar" style="background: linear-gradient(135deg, #795548, #BCAAA4);">
+                        <span class="avatar-initial">赵</span>
+                    </div>
+                    <h3 class="stylist-name">赵一鸣</h3>
+                    <p class="stylist-role">造型师</p>
+                    <p class="stylist-exp">从业 5 年</p>
+                    <div class="stylist-tags">
+                        <span>个性造型</span>
+                        <span>胡须造型</span>
+                    </div>
+                    <p class="stylist-bio">年轻有活力，善于捕捉流行趋势，擅长打造个性鲜明的前卫造型，同时也精通精修胡须艺术。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 在线预约 -->
+    <section class="section booking" id="booking">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">BOOK NOW</p>
+                <h2 class="section-title">在线预约</h2>
+                <p class="section-desc">三步轻松预约，开启你的绅士焕变之旅</p>
+            </div>
+
+            <!-- 进度条 -->
+            <div class="booking-progress">
+                <div class="progress-step active" data-step="1">
+                    <div class="step-circle">1</div>
+                    <span class="step-label">选择服务</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step" data-step="2">
+                    <div class="step-circle">2</div>
+                    <span class="step-label">选择发型师</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step" data-step="3">
+                    <div class="step-circle">3</div>
+                    <span class="step-label">选择时间</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step" data-step="4">
+                    <div class="step-circle">4</div>
+                    <span class="step-label">填写信息</span>
+                </div>
+                <div class="progress-line"></div>
+                <div class="progress-step" data-step="5">
+                    <div class="step-circle">5</div>
+                    <span class="step-label">确认预约</span>
+                </div>
+            </div>
+
+            <!-- 步骤内容 -->
+            <div class="booking-form">
+                <!-- Step 1: 选择服务 -->
+                <div class="booking-step active" id="step1">
+                    <h3 class="step-title">选择服务项目</h3>
+                    <div class="service-grid">
+                        <label class="service-card">
+                            <input type="radio" name="service" value="classic-cut" required>
+                            <div class="service-content">
+                                <div class="service-icon">&#9986;</div>
+                                <h4>经典剪发</h4>
+                                <p>洗剪吹全套服务</p>
+                                <span class="service-price">&yen;88</span>
+                            </div>
+                        </label>
+                        <label class="service-card">
+                            <input type="radio" name="service" value="trend-cut">
+                            <div class="service-content">
+                                <div class="service-icon">&#9733;</div>
+                                <h4>潮流造型</h4>
+                                <p>时尚纹理/渐变造型</p>
+                                <span class="service-price">&yen;128</span>
+                            </div>
+                        </label>
+                        <label class="service-card">
+                            <input type="radio" name="service" value="color">
+                            <div class="service-content">
+                                <div class="service-icon">&#9788;</div>
+                                <h4>染发造型</h4>
+                                <p>时尚染发 + 造型设计</p>
+                                <span class="service-price">&yen;288</span>
+                            </div>
+                        </label>
+                        <label class="service-card">
+                            <input type="radio" name="service" value="perm">
+                            <div class="service-content">
+                                <div class="service-icon">&#10047;</div>
+                                <h4>烫发造型</h4>
+                                <p>冷烫/热烫 + 剪发</p>
+                                <span class="service-price">&yen;358</span>
+                            </div>
+                        </label>
+                        <label class="service-card">
+                            <input type="radio" name="service" value="shave">
+                            <div class="service-content">
+                                <div class="service-icon">&#9876;</div>
+                                <h4>经典修面</h4>
+                                <p>热毛巾 + 精修胡须</p>
+                                <span class="service-price">&yen;58</span>
+                            </div>
+                        </label>
+                        <label class="service-card">
+                            <input type="radio" name="service" value="vip">
+                            <div class="service-content">
+                                <div class="service-icon">&#9830;</div>
+                                <h4>绅士套餐</h4>
+                                <p>剪发 + 修面 + 造型</p>
+                                <span class="service-price">&yen;158</span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="step-actions">
+                        <button class="btn btn-primary" onclick="nextStep()">下一步</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: 选择发型师 -->
+                <div class="booking-step" id="step2">
+                    <h3 class="step-title">选择发型师</h3>
+                    <div class="stylist-select-grid">
+                        <label class="stylist-select-card">
+                            <input type="radio" name="stylist" value="陈志远" required>
+                            <div class="stylist-select-content">
+                                <div class="stylist-select-avatar" style="background: linear-gradient(135deg, #5D4037, #8D6E63);">
+                                    <span>陈</span>
+                                </div>
+                                <h4>陈志远</h4>
+                                <p>首席发型师 · 店长</p>
+                                <span class="stylist-tags-sm">商务造型 · 复古油头</span>
+                            </div>
+                        </label>
+                        <label class="stylist-select-card">
+                            <input type="radio" name="stylist" value="林浩宇">
+                            <div class="stylist-select-content">
+                                <div class="stylist-select-avatar" style="background: linear-gradient(135deg, #6D4C41, #A1887F);">
+                                    <span>林</span>
+                                </div>
+                                <h4>林浩宇</h4>
+                                <p>高级染烫师</p>
+                                <span class="stylist-tags-sm">时尚染发 · 创意烫发</span>
+                            </div>
+                        </label>
+                        <label class="stylist-select-card">
+                            <input type="radio" name="stylist" value="张凯文">
+                            <div class="stylist-select-content">
+                                <div class="stylist-select-avatar" style="background: linear-gradient(135deg, #4E342E, #795548);">
+                                    <span>张</span>
+                                </div>
+                                <h4>张凯文</h4>
+                                <p>资深发型师</p>
+                                <span class="stylist-tags-sm">韩式造型 · 潮流渐变</span>
+                            </div>
+                        </label>
+                        <label class="stylist-select-card">
+                            <input type="radio" name="stylist" value="王德明">
+                            <div class="stylist-select-content">
+                                <div class="stylist-select-avatar" style="background: linear-gradient(135deg, #3E2723, #6D4C41);">
+                                    <span>王</span>
+                                </div>
+                                <h4>王德明</h4>
+                                <p>传统理发师</p>
+                                <span class="stylist-tags-sm">经典修面 · 传统推剪</span>
+                            </div>
+                        </label>
+                        <label class="stylist-select-card">
+                            <input type="radio" name="stylist" value="赵一鸣">
+                            <div class="stylist-select-content">
+                                <div class="stylist-select-avatar" style="background: linear-gradient(135deg, #795548, #BCAAA4);">
+                                    <span>赵</span>
+                                </div>
+                                <h4>赵一鸣</h4>
+                                <p>造型师</p>
+                                <span class="stylist-tags-sm">个性造型 · 胡须造型</span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="step-actions">
+                        <button class="btn btn-outline" onclick="prevStep()">上一步</button>
+                        <button class="btn btn-primary" onclick="nextStep()">下一步</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: 选择时间 -->
+                <div class="booking-step" id="step3">
+                    <h3 class="step-title">选择日期和时间</h3>
+                    <div class="datetime-container">
+                        <div class="calendar-section">
+                            <div class="calendar-header">
+                                <button class="cal-nav" id="calPrev">&lt;</button>
+                                <span class="cal-month" id="calMonth"></span>
+                                <button class="cal-nav" id="calNext">&gt;</button>
+                            </div>
+                            <div class="calendar-weekdays">
+                                <span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
+                            </div>
+                            <div class="calendar-days" id="calDays"></div>
+                        </div>
+                        <div class="timeslot-section">
+                            <h4>可选时间段</h4>
+                            <div class="timeslot-grid" id="timeSlots">
+                                <button class="timeslot-btn" data-time="09:00">09:00</button>
+                                <button class="timeslot-btn" data-time="09:30">09:30</button>
+                                <button class="timeslot-btn" data-time="10:00">10:00</button>
+                                <button class="timeslot-btn" data-time="10:30">10:30</button>
+                                <button class="timeslot-btn" data-time="11:00">11:00</button>
+                                <button class="timeslot-btn" data-time="11:30">11:30</button>
+                                <button class="timeslot-btn" data-time="14:00">14:00</button>
+                                <button class="timeslot-btn" data-time="14:30">14:30</button>
+                                <button class="timeslot-btn" data-time="15:00">15:00</button>
+                                <button class="timeslot-btn" data-time="15:30">15:30</button>
+                                <button class="timeslot-btn" data-time="16:00">16:00</button>
+                                <button class="timeslot-btn" data-time="16:30">16:30</button>
+                                <button class="timeslot-btn" data-time="17:00">17:00</button>
+                                <button class="timeslot-btn" data-time="17:30">17:30</button>
+                                <button class="timeslot-btn" data-time="18:00">18:00</button>
+                                <button class="timeslot-btn" data-time="18:30">18:30</button>
+                                <button class="timeslot-btn" data-time="19:00">19:00</button>
+                                <button class="timeslot-btn" data-time="19:30">19:30</button>
+                                <button class="timeslot-btn" data-time="20:00">20:00</button>
+                                <button class="timeslot-btn" data-time="20:30">20:30</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-actions">
+                        <button class="btn btn-outline" onclick="prevStep()">上一步</button>
+                        <button class="btn btn-primary" onclick="nextStep()">下一步</button>
+                    </div>
+                </div>
+
+                <!-- Step 4: 填写信息 -->
+                <div class="booking-step" id="step4">
+                    <h3 class="step-title">填写个人信息</h3>
+                    <div class="info-form">
+                        <div class="form-group">
+                            <label for="userName">您的姓名 <span class="required">*</span></label>
+                            <input type="text" id="userName" placeholder="请输入您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userPhone">联系电话 <span class="required">*</span></label>
+                            <input type="tel" id="userPhone" placeholder="请输入您的手机号码" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userNote">备注信息</label>
+                            <textarea id="userNote" placeholder="如有特殊要求请在此说明（选填）" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="step-actions">
+                        <button class="btn btn-outline" onclick="prevStep()">上一步</button>
+                        <button class="btn btn-primary" onclick="nextStep()">下一步</button>
+                    </div>
+                </div>
+
+                <!-- Step 5: 确认预约 -->
+                <div class="booking-step" id="step5">
+                    <h3 class="step-title">确认预约信息</h3>
+                    <div class="booking-summary">
+                        <div class="summary-item">
+                            <span class="summary-label">服务项目</span>
+                            <span class="summary-value" id="summaryService">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">发型师</span>
+                            <span class="summary-value" id="summaryStylist">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">预约日期</span>
+                            <span class="summary-value" id="summaryDate">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">预约时间</span>
+                            <span class="summary-value" id="summaryTime">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">姓名</span>
+                            <span class="summary-value" id="summaryName">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">电话</span>
+                            <span class="summary-value" id="summaryPhone">-</span>
+                        </div>
+                        <div class="summary-item" id="summaryNoteRow" style="display:none;">
+                            <span class="summary-label">备注</span>
+                            <span class="summary-value" id="summaryNote">-</span>
+                        </div>
+                    </div>
+                    <div class="step-actions">
+                        <button class="btn btn-outline" onclick="prevStep()">上一步</button>
+                        <button class="btn btn-primary btn-submit" onclick="submitBooking()">确认预约</button>
+                    </div>
+                </div>
+
+                <!-- 成功提示 -->
+                <div class="booking-step" id="stepSuccess" style="display:none;">
+                    <div class="success-content">
+                        <div class="success-icon">&#10004;</div>
+                        <h3>预约成功！</h3>
+                        <p>我们已收到您的预约，发型师将在预约时间前与您联系确认。</p>
+                        <p class="success-tip">请保持电话畅通，期待为您服务！</p>
+                        <button class="btn btn-primary" onclick="resetBooking()">继续预约</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-brand">
+                        <span class="logo-icon">&#9986;</span> 绅士美发店
+                    </h3>
+                    <p class="footer-desc">致力于为每一位绅士提供最专业、最贴心的美发服务，让您由内而外散发自信魅力。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>营业时间</h4>
+                    <ul class="footer-list">
+                        <li>周一至周五：09:00 - 21:00</li>
+                        <li>周六至周日：09:00 - 22:00</li>
+                        <li>节假日正常营业</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul class="footer-list">
+                        <li>电话：138-0000-8888</li>
+                        <li>微信：Gentleman_Barber</li>
+                        <li>地址：市中心商业街88号</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <p class="footer-social-text">扫码关注公众号获取最新优惠活动</p>
+                    <div class="footer-qr-placeholder">
+                        <span>公众号二维码</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 绅士美发店 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
